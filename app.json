@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "JARVIS",
-    "slug": "jarvis_assistant_2026",
+    "slug": "jarvis",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -20,7 +20,8 @@
     "android": {
       "package": "com.jarvis.controller",
       "permissions": [
-        "moe.shizuku.manager.permission.API_V23"
+        "moe.shizuku.manager.permission.API_V23",
+        "android.permission.INTERNET"
       ],
       "adaptiveIcon": {
         "backgroundColor": "#080C14",
