@@ -19,6 +19,9 @@
     },
     "android": {
       "package": "com.jarvis.controller",
+      "permissions": [
+        "moe.shizuku.manager.permission.API_V23"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#080C14",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -32,11 +35,24 @@
     "plugins": [
       ["expo-router", { "origin": "https://replit.com/" }],
       "expo-font",
-      "expo-web-browser"
+      "expo-web-browser",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "extraMavenRepos": ["https://maven.pkg.github.com/Shizuku600/Shizuku"]
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9dcaadaf-b204-4d8e-8075-1ce08378b086"
+      }
     }
   }
 }
